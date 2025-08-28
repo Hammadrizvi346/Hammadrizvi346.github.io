@@ -21,36 +21,34 @@
       <h1>Contact Me</h1>
     </header>
 
-    <section>
-      <img src="contact-illustration.png" alt="Contact Illustration" class="contact-img">
-      <ul>
-        <li><strong>Email:</strong> hammadrizvi@example.com</li>
-        <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
-        <li><strong>Location:</strong> Mawana, Uttar Pradesh</li>
-      </ul>
-    </section>
+   <section class="contact">
+  <img src="contact-illustration.png" alt="Contact Illustration" class="contact-img">
 
-    <section>
-      <h2>Send a Message</h2>
-      <form>
-        <div>
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name">
-        </div>
-        <br>
-        <div>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email">
-        </div>
-        <br>
-        <div>
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="5" cols="40"></textarea>
-        </div>
-        <br>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+  <div class="contact-info">
+    <ul>
+      <li><strong>Email:</strong> hamandani4u@example.com</li>
+      <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+      <li><strong>Location:</strong> Mainawati, Uttar Pradesh</li>
+    </ul>
+  </div>
+
+  <div class="contact-form">
+    <h2>Send a Message</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
   </main>
 </body>
 </html>
+
