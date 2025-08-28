@@ -1,64 +1,64 @@
 /* ============================
-   🌐 Base Styles
+   🌐 Base Styles & Variables
 ============================ */
+:root {
+  --primary: #0077b6;
+  --secondary: #00b4d8;
+  --accent: #90e0ef;
+  --bg-light: #f8f9fa;
+  --bg-dark: #1e1e2f;
+  --text-dark: #333;
+  --text-light: #fff;
+  --shadow: 0 6px 16px rgba(0,0,0,0.1);
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
   line-height: 1.6;
 }
+
 html {
   scroll-behavior: smooth;
-}
-
-/* ============================
-   🔠 Typography
-============================ */
-h1, h2, h3 {
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #0077b6;
-}
-p {
-  font-size: 1.1rem;
-  color: #555;
 }
 
 /* ============================
    🔝 Navigation Bar
 ============================ */
 nav {
-  background-color: #1e1e2f;
+  background: linear-gradient(to right, var(--bg-dark), #2a2a40);
   padding: 15px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
-  list-style: none;
   gap: 30px;
+  list-style: none;
 }
+
 nav a {
-  color: #fff;
+  color: var(--text-light);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: var(--transition);
 }
+
 nav a:hover {
-  color: #ffd700;
-  text-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  color: var(--accent);
+  text-shadow: 0 2px 8px rgba(144, 224, 239, 0.5);
 }
 
 /* ============================
@@ -66,26 +66,30 @@ nav a:hover {
 ============================ */
 .hero {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 40px;
   padding: 80px 20px;
-  background-color: #caf0f8;
-  flex-wrap: wrap;
+  background: linear-gradient(to right, #caf0f8, #ade8f4);
 }
+
 .profile-img {
   width: 220px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
+
 .hero-text {
   max-width: 500px;
   text-align: center;
 }
+
 .hero h1 {
   font-size: 2.5rem;
-  color: #0077b6;
+  color: var(--primary);
 }
+
 .hero p {
   font-size: 1.2rem;
   color: #03045e;
@@ -95,13 +99,16 @@ nav a:hover {
    👤 About Section
 ============================ */
 .about {
-  background-color: #f8f9fa;
+  background-color: var(--bg-light);
   padding: 60px 20px;
   text-align: center;
 }
+
 .about p {
   max-width: 700px;
   margin: auto;
+  font-size: 1.1rem;
+  color: #555;
 }
 
 /* ============================
@@ -111,8 +118,8 @@ nav a:hover {
   width: 80%;
   max-width: 600px;
   margin-top: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 /* ============================
@@ -123,31 +130,33 @@ nav a:hover {
   padding: 60px 20px;
   text-align: center;
 }
+
 .skills ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   list-style: none;
-  padding: 0;
-  margin-bottom: 40px;
 }
+
 .skills ul li {
-  background-color: #90e0ef;
+  background: linear-gradient(to right, var(--accent), var(--secondary));
   padding: 15px;
-  border-radius: 8px;
+  border-radius: var(--radius);
   font-weight: 600;
   color: #03045e;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
 }
+
 .skills ul li:hover {
   transform: scale(1.05);
 }
+
 .skills img {
   width: 80%;
   max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 /* ============================
@@ -158,26 +167,31 @@ nav a:hover {
   padding: 60px 20px;
   text-align: center;
 }
+
 .project {
   background-color: white;
   padding: 20px;
   margin: 20px auto;
   max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
 }
+
 .project:hover {
   transform: translateY(-5px);
 }
+
 .project h3 {
-  color: #0077b6;
+  color: var(--primary);
   margin-bottom: 10px;
 }
+
 .project p {
   font-size: 1.1rem;
   color: #444;
 }
+
 .project-img {
   width: 100%;
   max-height: 250px;
@@ -189,65 +203,56 @@ nav a:hover {
 /* ============================
    📬 Contact Section
 ============================ */
-/* 📬 Contact Section Layout */
 .contact {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px;
   padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
-/* 🖼️ Contact Image */
 .contact-img {
   width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
-/* 📄 Contact Info */
-.contact-info {
-  flex: 1;
-  min-width: 250px;
-}
-.contact-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1.1rem;
-  color: #333;
-}
-.contact-info li {
-  margin-bottom: 12px;
-}
-.contact-info strong {
-  color: #0077b6;
-}
-
-/* 📝 Contact Form */
+.contact-info,
 .contact-form {
   flex: 1;
   min-width: 280px;
 }
+
+.contact-info ul {
+  list-style: none;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.contact-info li {
+  margin-bottom: 12px;
+}
+
+.contact-info strong {
+  color: var(--primary);
+}
+
 .contact-form h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #0077b6;
+  color: var(--primary);
 }
+
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.contact-form label {
-  font-weight: 600;
-  color: #333;
-}
+
 .contact-form input,
 .contact-form textarea {
   padding: 12px;
@@ -256,32 +261,39 @@ nav a:hover {
   font-size: 1rem;
   width: 100%;
 }
+
 .contact-form button {
   padding: 12px;
-  background-color: #0077b6;
+  background-color: var(--primary);
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition);
 }
+
 .contact-form button:hover {
   background-color: #023e8a;
 }
 
-/* 📱 Responsive Design */
+/* ============================
+   📱 Responsive Design
+============================ */
 @media (max-width: 768px) {
+  .hero,
   .contact {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .contact-img {
     width: 200px;
   }
-  .contact-form,
-  .contact-info {
+
+  .contact-info,
+  .contact-form {
     width: 100%;
   }
 }
