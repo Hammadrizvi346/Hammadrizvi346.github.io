@@ -103,3 +103,27 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+/* --- YEH NAYA CODE ADD KAREIN --- */
+
+/* Project Card Styles */
+.project-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensures cards in the same row have the same height */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.project-card .card-title {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.project-card .badge {
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
