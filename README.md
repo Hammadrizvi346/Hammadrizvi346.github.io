@@ -1,33 +1,46 @@
-# Hammad Rizvi - Personal Portfolio Website
+# Hammad Rizvi's Personal Portfolio
 
-Welcome to the GitHub repository for my personal portfolio website. This site is designed to showcase my skills, educational background, and projects as I progress through my B.Tech in Computer Science & Design. It serves as a central hub for my professional online presence.
+> Building skills in Data Science & Full-Stack | Lifelong learner | Passion: AI, Coding, Problem-Solving
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/Hosted%20On-GitHub%20Pages-black?style=for-the-badge&logo=github)
+
+---
 
 ## 🚀 Live Demo
 
-You can view the live version of my portfolio here: **[hammadrizvi.me](https://hammadrizvi.me)**
+### >> [hammadrizvi.me](https://hammadrizvi.me) <<
 
-## ✨ Features
+---
 
-* **Fully Responsive Design**: Looks great on desktops, tablets, and mobile devices.
-* **Multi-Page Layout**: Separate, well-organized pages for Home, Education, Skills, Projects, and Contact.
-* **Interactive Skills Section**: An accordion-style layout to detail each technical and soft skill.
-* **Professional Project Showcase**: A card-based design to display project details, including descriptions, tech stacks, and links to the code or live demos.
-* **Functional Contact Form**: Integrated with Formspree to receive messages directly via email.
-* **Downloadable CV**: A direct link to download my professional resume.
+## 📸 Sneak Peek
 
-## 🛠️ Technologies Used
+![Portfolio Screenshot](screenshot.png)
 
-This portfolio was built using modern web technologies:
+---
 
-* **HTML5**
-* **CSS3**
-* **Bootstrap 5**: For responsive design and modern components.
-* **Font Awesome**: For professional icons.
-* **GitHub Pages**: For hosting.
+## 🛠️ Tech Stack
 
-## 📬 Connect with Me
+| Technology | Purpose |
+| :--- | :--- |
+| **HTML5** | Structure and Content |
+| **CSS3** | Styling and Design |
+| **Bootstrap 5** | Responsive Layout & Components |
+| **Font Awesome** | Icons |
+| **Formspree** | Functional Contact Form |
+| **GitHub Pages**| Hosting |
 
-I'm always open to connecting and discussing new opportunities or ideas.
+---
+
+## 📖 About This Project
+
+This is my personal portfolio, built from scratch to showcase my journey as a B.Tech student in Computer Science & Design. It's a living project that will grow as I learn new skills and build more applications. The goal is to have a professional space to present my work to peers, mentors, and potential recruiters.
+
+---
+
+## 📫 Get In Touch
 
 * **LinkedIn**: [linkedin.com/in/hammadrizvi346](https://www.linkedin.com/in/hammadrizvi346)
 * **Email**: hammadrizvi346@gmail.com
